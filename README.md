@@ -43,8 +43,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Framework: ViteJS, React
 
 ## Lighthouse
-TODO
+### Search Page
+![image](https://github.com/irfanandriansyah1997/anime-reader/assets/20946937/a0cf1d2b-d409-443d-8822-05867b1e8fa0)
+
+### Detail Page
+![image](https://github.com/irfanandriansyah1997/anime-reader/assets/20946937/8c39616d-c9d8-4909-b875-4c203c6195e1)
+
 
 ## Coverage
-TODO
+![image](https://github.com/irfanandriansyah1997/anime-reader/assets/20946937/970bf3b7-c695-472f-a8a6-3145c5c8a3c3)
+
 
