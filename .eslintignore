@@ -1,0 +1,10 @@
+etc
+dist
+node_modules/
+
+# Custom eslint ignore file and directory
+commitlint.config.js
+vite.config.ts
+jest.config.cjs
+package.json
+sw.js
