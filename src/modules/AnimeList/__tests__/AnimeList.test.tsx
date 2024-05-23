@@ -79,7 +79,7 @@ describe('Testing Anime Detail Modules Component', () => {
       expect(loading).not.toBeInTheDocument();
     });
 
-    const searchResultLabel = screen.getByRole('presentation', {
+    const searchResultLabel = await screen.getByRole('presentation', {
       name: 'search result label'
     });
     expect(searchResultLabel).toHaveTextContent('All Anime');
@@ -151,7 +151,7 @@ describe('Testing Anime Detail Modules Component', () => {
     /**
      * Check anime card list
      */
-    const cardItems = screen.getAllByRole('region', {
+    const cardItems = await screen.findAllByRole('region', {
       name: 'anime list card'
     });
     expect(cardItems).toHaveLength(3);
@@ -171,8 +171,8 @@ describe('Testing Anime Detail Modules Component', () => {
     });
     jest.runAllTimers();
 
-    await waitFor(() => {
-      const reRendercardItems = screen.getAllByRole('region', {
+    await waitFor(async () => {
+      const reRendercardItems = await screen.findAllByRole('region', {
         name: 'anime list card'
       });
       expect(searchResultLabel).toHaveTextContent('Result for "eyeshield"');
@@ -214,7 +214,7 @@ describe('Testing Anime Detail Modules Component', () => {
       expect(loading).not.toBeInTheDocument();
     });
 
-    const searchResultLabel = screen.getByRole('presentation', {
+    const searchResultLabel = await screen.findByRole('presentation', {
       name: 'search result label'
     });
     expect(searchResultLabel).toHaveTextContent('All Anime');
@@ -222,7 +222,7 @@ describe('Testing Anime Detail Modules Component', () => {
     /**
      * Check anime card list
      */
-    const cardItems = screen.getAllByRole('region', {
+    const cardItems = await screen.findAllByRole('region', {
       name: 'anime list card'
     });
     expect(cardItems).toHaveLength(3);
