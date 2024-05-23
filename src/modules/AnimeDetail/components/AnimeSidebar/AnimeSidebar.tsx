@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 import Icon from '@/components/Icon';
 import Typography from '@/components/Typography';
@@ -65,15 +66,15 @@ const AnimeSidebar = (props: AnimeSidebarProps) => {
                       return (
                         <li key={item.id}>
                           <Icon icon="link-linked" color={SECONDARY700} />
-                          <a
-                            href={`/anime/${item.id}`}
+                          <Link
+                            to={`/anime/${item.id}`}
                             target="_blank"
                             rel="noreferrer"
                           >
                             <Typography.Paragraph modifier="body-1" ellipsis>
                               {item.name}
                             </Typography.Paragraph>
-                          </a>
+                          </Link>
                         </li>
                       );
                     })}
