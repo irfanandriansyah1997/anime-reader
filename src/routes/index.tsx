@@ -1,11 +1,11 @@
-import { createBrowserRouter, Outlet } from 'react-router-dom';
+import { createHashRouter, Outlet } from 'react-router-dom';
 
 import AnimeDetailModulesLazy from '@/modules/AnimeDetail';
 import AnimeList from '@/modules/AnimeList';
 
 import Typography from '@/components/Typography';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     children: [
       {
